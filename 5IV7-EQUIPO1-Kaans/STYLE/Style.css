@@ -1,0 +1,349 @@
+.body-index{
+
+padding: 0;
+margin: 0;
+
+/*background-image: url("../IMG/aa.jpg");*/
+background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../IMG/aa.jpg") ;
+
+/* Set a specific height */
+height: 500px;
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+
+}
+
+.navegacion{
+
+    font-family: 'Montserrat', sans-serif;
+
+    position: relativa;
+
+    display: flexbox;
+    /*background-color: #F25270;*/
+
+    color: white;
+
+
+
+    width: 100%;
+
+    margin: 0;
+
+    align-self: center;
+
+    /*padding: 10px;*/
+
+
+
+}
+
+.navegacion-contenido{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 12px;
+
+}
+
+.navegacion .flex-box{
+
+
+    display: inline-flex;
+    align-items: center;
+
+
+
+}
+
+
+.navegacion .flex-box2{
+
+
+    display: block;
+    width: 50%;
+
+
+
+}
+
+
+.navegacion a{
+
+    color: white;
+    margin-right: 11px;
+    text-decoration: none;
+    transition: ease 0.4s;
+
+}
+.navegacion a:hover{
+
+
+    color:#9AD9C2;
+
+}
+
+
+.navegacion img{
+
+    margin: 11px;
+
+}
+
+
+.align-right{
+
+    float: right;
+
+}
+
+
+.align-left{
+
+    float: left;
+
+}
+
+.welcome-text {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin-top: 15%;
+	text-align: center;
+}
+.welcome-text h1 {
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 60px;
+}
+.welcome-text h1 span {
+	color: #9AD9C2;
+}
+.welcome-text a {
+	border: 1px solid #fff;
+	padding: 10px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 20px;
+	display: inline-block;
+	color: #fff;
+}
+.welcome-text a:hover {
+
+	background: #fff;
+    color: #333;
+
+}
+.modal-sign-in{
+
+  width:  100%;
+  height: 100%;
+
+  background-color: rgba(0,0,0,0.7);
+
+  display:           none;
+  align-items:     center;
+  justify-content: center;
+
+  position: absolute;
+  top:             0;
+
+
+}
+
+.modal-sign-in .content {
+
+
+  width:  400px;
+  height: 500px;
+
+  display: flex;
+
+  background-color: #1B1F26;
+  opacity:              1;
+
+  justify-content: center;
+  align-items:     center;
+
+}
+.content-div-form{
+
+
+  width: 300px;
+  height: auto;
+
+
+
+
+}
+
+.sign-in-textbox{
+
+
+  width:   92%;
+  padding: 4%;
+
+  background-color: #5E6C85;
+
+  margin-bottom: 10px;
+
+  border-style:  none;
+  border-radius: 50px;
+
+}
+
+.sign-in-title{
+
+  text-align: center;
+  padding-bottom: 10px;
+
+  color:                          white;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.sign-in-text{
+
+  font-size: 9pt;
+  color: #CCCCCC;
+  margin-left: 12px;
+  font-family: 'Montserrat', sans-serif;
+
+
+}
+.content-div-form a {
+
+
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9pt;
+  margin-top: 20px;
+
+
+}
+
+.content-div-form a:hover {
+
+
+  color: #CCCCCC;
+
+
+
+}
+.sorrow{
+
+      font-family: 'Montserrat', sans-serif;
+      border-radius: 50px;
+      margin-bottom: 5px;
+      background-color: #9AD9C2;
+      border: none;
+      width: 40%;
+      height: 40px;
+
+
+}
+
+.outer {
+  position: relative;
+  margin: auto;
+  width: 70px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.inner {
+  width: inherit;
+  text-align: center;
+}
+
+.outer a {
+  font-size: .8em;
+  line-height: 4em;
+  text-transform: uppercase;
+  color: #fff;
+  transition: all .3s ease-in;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.inner:before, .inner:after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: inherit;
+  background: #9AD9C2;
+  left: 0;
+  transition: all .3s ease-in;
+}
+
+.inner:before {
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+.inner:after {
+  bottom: 50%;
+  transform: rotate(-45deg);
+}
+
+.outer:hover a {
+  opacity: 1;
+}
+
+.outer:hover .inner:before,
+.outer:hover .inner:after {
+  transform: rotate(0);
+}
+
+.outer:hover .inner:before {
+  top: 0;
+}
+
+.outer:hover .inner:after {
+  bottom: 0;
+}
+
+.modal-sign-up{
+
+  width:  100%;
+  height: 100%;
+
+  background-color: rgba(0,0,0,0.7);
+
+  display:           none;
+  align-items:     center;
+  justify-content: center;
+
+  position: absolute;
+  top:             0;
+
+
+}
+
+.modal-sign-up .content {
+
+
+  width:  400px;
+  height: 800px;
+
+  display: flex;
+
+  background-color: #1B1F26;
+  opacity:              1;
+
+  justify-content: center;
+  align-items:     center;
+
+}
